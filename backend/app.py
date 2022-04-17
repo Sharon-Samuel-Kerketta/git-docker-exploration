@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    return "hey this is coming flask backend"
+    return "hey this is coming from flask backend"
 
 
 if __name__ == '__main__':
