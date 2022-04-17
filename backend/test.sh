@@ -1,0 +1,2 @@
+echo $test > testing.json
+

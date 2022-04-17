@@ -1,9 +1,7 @@
-FROM python:3.7
+FROM continuumio/miniconda3:4.10.3-alpine
 
 WORKDIR /app
 
 COPY . .
 
 RUN pip install -r requirements.txt
-
-CMD ["python", "-m", "flask", "run", "--host=0.0.0.0"]
