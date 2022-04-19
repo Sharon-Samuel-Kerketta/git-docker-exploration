@@ -1,2 +1,2 @@
-echo $test > testing.json
+echo $(cat testing.txt)
 

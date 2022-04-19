@@ -1,12 +1,13 @@
 version: "3"
 services:
   web:
+    image: flask_backend
     build: 
       context: .
       dockerfile: Dockerfile
-    env_file: .env
+    
     command: >
-            sh -c "./test.sh &&
+            sh -c "
             python -m flask run --host=0.0.0.0"
     ports:
       - "8000:5000"
